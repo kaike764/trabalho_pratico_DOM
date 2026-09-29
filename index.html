@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hortência Floricultura</title>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ÁREA DO CABEÇALHO -->
+    <header class="header" >
+        <div class="header-logo">
+            <img id="logo" src="images/LogoHortencia.png" alt="Logo">
+            <div id="titulo">
+                <h1 id="titulo-01">Floricultura</h1>
+                <h1 id="titulo-02">Hortência</h1>
+            </div>
+        </div>
+        <div class="header-menu">
+            <h2 class="header-icon" id="inicio">Início</h2>
+            <h2 class="header-icon" id="catalogo">Catálogo</h2>
+            <h2 class="header-icon" id="novidades">Novidades</h2>
+            <button id="btn-modo-escuro">Modo Escuro</button>
+        </div>
+        <div id="header-carrinho">
+            <i class="ph ph-shopping-cart header-icon" id="carrinho"></i>
+        </div>
+    </header>
+    <!-- ÁREA DE PROMOÇÕES -->
+     <div id="promocoes">
+        <span id="tempo-promocao">Oferta Relâmpago encerra em: 60s</span>
+        <button id="btn-pausar-tempo">Pausar</button>
+    </div>
+
+    <!-- ÁREA DA PESQUISA -->
+    <div id="pesquisa">
+        <i class="ph ph-magnifying-glass" id="lupa"></i>
+        <input id="pesquisa-usuario" type="text" placeholder="Pesquisar por flores, arranjos, decorações...">
+    </div>
+    <div id="resultado">
+        <p id="resultado-pesquisa">Resultados para...</p>
+    </div>
+    <!-- ÁREA DE NOVIDADES -->
+    <div id="novidade-container">
+        <div id="novidade-imagem-container">
+            <img id="novidade-imagem" src="images/Imagem_Home.jpg">
+        </div>
+        <div id="novidade-conteudo">
+            <h1 id="novidade-titulo">Novidades!</h1>
+            <h3 id="novidade-texto">Chegaram novas flores e arranjos para sua <br> casa ou pessoa amada, venha ver!</h3>
+            <button id="novidade-btn">Confira já!</button>
+
+            <p id="alerta-sucesso" class="escondido"></p>
+
+             <div id="flores_container">
+                <button class="botoes-galeria" onclick="trocarFlor('Imagem_Home.jpg')">Início</button>
+                <button class="botoes-galeria" onclick="trocarFlor('Rosa.webp')">Rosa</button>
+                <button class="botoes-galeria" onclick="trocarFlor('Girassol.jpg')">Girassol</button>
+                <button class="botoes-galeria" onclick="trocarFlor('Jasmin.jpg')">Jasmim</button>
+            </div>
+        </div>
+    </div>
+
+    <footer id="rodape">
+        <p id="rodape-texto">Área de Cupons</p>
+        <div id="area-cupom">
+            <input id="input-cupom" type="password" placeholder="Digite seu cupom...">
+            <i id="btn-ver-cupom" class="ph ph-eye-closed"></i>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
